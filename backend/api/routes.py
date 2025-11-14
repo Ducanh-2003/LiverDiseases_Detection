@@ -1,5 +1,5 @@
 from . import api_bp
-from services.prediction import get_prediction
+from backend.services.prediction import get_prediction
 from flask import request, jsonify
 
 @api_bp.route('/predict', methods=['POST'])
@@ -20,4 +20,4 @@ def predict():
     except ValueError as err: 
         return jsonify({'error': str(err)}), 500
     except Exception as err:
-        return jsonify({'error': f'Server erorr: {str(err)}'}), 500
+        return jsonify({'error': f'Server error: {str(err)}'}), 500

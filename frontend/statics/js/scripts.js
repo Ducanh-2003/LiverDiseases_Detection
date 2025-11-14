@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const file_input = document.getElementById('fileInput');
-    const btn_predict = document.getElementById('btnPredict');
-    const img_preview = document.getElementById('imgPreview');
-    const img_result = document.getElementById('imgResult');
-    const box_result = document.getElementById('boxResult');
-    const txt_result = document.getElementById('txtResult');
-    const txt_loading = document.getElementById('txtLoading');
+    const file_input = document.getElementById('file_input');
+    const btn_predict = document.getElementById('btn_predict');
+    const img_preview = document.getElementById('img_preview');
+    const img_result = document.getElementById('img_result');
+    const box_result = document.getElementById('box_result');
+    const txt_result = document.getElementById('txt_result');
+    const txt_loading = document.getElementById('txt_loading');
 
-    const api_url = 'http://127.0.0.1:5000/predict';
+    const api_url = 'http://127.0.0.1:5000/api/predict';
 
     file_input.addEventListener('change', function() {
         const file = this.files[0];
