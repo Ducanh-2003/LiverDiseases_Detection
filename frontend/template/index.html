@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Breast Cancer Detector</h1>
+    </header>
+    <main>
+        <div class="container">
+            <p>Upload a histopathology image to detect potential breast cancer.</p>
+            
+            <div class="upload-area">
+                <input type="file" id="file_input" accept="image/*">
+                <br/>
+                <img id="img_preview" src="" alt="Image Preview">
+            </div>
+            
+            <button class="btn" id="btn_predict">Analyze</button>
+            <p class="loading" id ="txt_loading">Analyzing image, please wait...</p>
+
+            <div class="result-box" id="box_result">
+                <h2>Result:</h2>
+                <img id="img_result" src="" alt="Result Image">
+                <div id="txt_result"></div>
+            </div>
+        </div>
+    </main>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
