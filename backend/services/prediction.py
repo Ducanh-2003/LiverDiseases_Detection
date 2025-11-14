@@ -2,7 +2,6 @@ from .model_loader import model
 from PIL import Image
 import io
 import base64
-import numpy as np
 
 def get_prediction(img_bytes):
     if model is None:
