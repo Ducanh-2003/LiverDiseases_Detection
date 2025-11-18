@@ -4,6 +4,7 @@
 
 # **Tuần 1 (17/11/2025 - 21/11/2025)**
 
+> ## ***18/11/2025***
 ## **Những gì đã học và làm được:**
 
 * ## Học được các cú pháp cơ bản của Markdown.
@@ -16,9 +17,14 @@
 
 ## **Những khó khăn tồn đọng:**
 * ## Khi test để model nhận dạng những ảnh trong valid kết quả trả về sai hoặc nếu đúng thì conf khá thấp
-![Ảnh valid](frontend/statics/assets/valid1.png)
+![Ảnh valid](frontend/statics/assets/valid1.png) 
+### (solved)
 * ## Khi đưa những ảnh không phải là ảnh tế bào ung thư để nhận dạng thì trả về kết quả là 1 trong 4 class đã train 
 ![Ảnh test](frontend/statics/assets/test2.png)
+
+## **Hướng giải quyết đã thực hiện:** 
+* ## Sau khi train lại với tỉ lệ train/valid/test là 70/20/10 thì model trả về kết quả dự đoán tốt hơn khi test ảnh valid cho ra kết quả dự đoán đúng (>80%)
+
 
 ## **Flowchart:**
 ```mermaid
