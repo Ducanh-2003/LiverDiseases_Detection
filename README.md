@@ -45,6 +45,8 @@
 | :---: | :---: |
 | ![Ảnh Valid](frontend/statics/assets/test2.png) | ![Ảnh Test](frontend/statics/assets/test2afterretrain.png) |
 
+## **Link demo:** [![Render](https://img.shields.io/badge/Render-Live_App-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://breastcancer-detection-4o3g.onrender.com/)
+
 ## **Flowchart:**
 ```mermaid
 flowchart TD
