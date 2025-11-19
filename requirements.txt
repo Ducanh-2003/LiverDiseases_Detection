@@ -1,4 +1,5 @@
 Flask
-Flask-CORS
 ultralytics
 Pillow
+gunicorn
+opencv-python-headless
