@@ -59,6 +59,13 @@
 * ## Cải thiện lại ở bước prepossesing và augmentation dataset chính xác hơn
 * ## Retrain model với dataset mới 
 
+
+>## ***2/12/2025 và 3/12/2025***
+
+## **Những gì đã học và làm được:**
+* ## Tìm hiểu các thuật ngữ: Foundation Models (Gemini), kiến trúc Transformer, tokenization, embedding, kỹ thuật Retrieval-Augmented generation, Prompt Engineering, Sentence-Transformers model
+* ## Tìm hiểu các thư viện: LangChain, vector database (ChromaDB), BeautifulSoup4
+* ## 
 ---
 
 ## Dataset: https://universe.roboflow.com/anusha-shetty-eprky/cancer-vvl9r
