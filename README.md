@@ -65,7 +65,17 @@
 ## **Những gì đã học và làm được:**
 * ## Tìm hiểu các thuật ngữ: Foundation Models (Gemini), kiến trúc Transformer, tokenization, embedding, kỹ thuật Retrieval-Augmented generation, Prompt Engineering, Sentence-Transformers model
 * ## Tìm hiểu các thư viện: LangChain, vector database (ChromaDB), BeautifulSoup4
-* ## 
+* ## Xây dựng 1 Flask app 
+
+---
+
+## **Tổng kết: 3/12/2025**
+
+* ## Model YOLOv8 nhận diện và phân loại 4 cấp độ tế bào ung thư vú.
+* ## Khắc phục lỗi nhận diện nhầm bằng cách thêm ảnh có lable null vào dataset
+* ## Điều chỉnh lỗi tiền xử lý (thêm grayscale, stretch), lỗi augmentation (grayscale) 
+* ## Model hiện tại nhận diện đúng, độ chính xác cao (mAP50: ~99%), độ tự tin tăng 10-20% (trung bình hiện tại là trên 80%) 
+
 ---
 
 ## Dataset: https://universe.roboflow.com/anusha-shetty-eprky/cancer-vvl9r
