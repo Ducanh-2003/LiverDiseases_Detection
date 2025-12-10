@@ -37,7 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 body: formData
             });
 
+            console.log('Response status:', response.status);
+            console.log('Response headers:', response.headers);
+            
             const data = await response.json();
+            console.log('Response data:', data);
 
             if (data.error) {   
                 alert('Error: ' + data.error);
@@ -51,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const ul = document.createElement('ul');
                     data.detections.forEach(det => {
                         const li = document.createElement('li');
-                        const style = det.class.includes('g3') || det.class.includes('g2') ? 'color:red; font-weight: bold' : '';
+                        const style = det.class.includes('inflammation') || det.class.includes('fibrosis') || det.class.includes('ballooning') || det.class.includes('steatosis') ? 'color:red; font-weight: bold' : '';
                         li.innerHTML = `<span style="${style}">${det.class} - Confidence: ${(det.confidence * 100).toFixed(2)}%</span>`;
                         ul.appendChild(li);
                     });     
@@ -60,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 box_result.style.display = 'block';
             }
         } catch (error) {
-            alert('An error occurred while processing the request.');
+            alert('An error occurred while processing the request: ' + error.message);
         } finally {
             txt_loading.style.display = 'none';
             btn_predict.disabled = false;
